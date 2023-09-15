@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color-scheme: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.w50 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url(./fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+    padding: 20px 2%;
+    color: white;
+}
+
+header h1 {
+    font-weight: 300;
+}
+
+section.hero {
+    min-height: 700px;
+    padding: 80px 0;
+    color: white;
+}
+
+.hero .center {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero .info h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: darkviolet;
+}
+
+.hero .info,
+.hero .contato {
+    min-height: 400px;
+
+}
+
+.hero .contato {
+    align-items: end;
+}
+
+.hero .info p {
+    font-size: 60px;
+    line-height: 60px;
+    color: aqua;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+.hero .contato .container {
+    text-align: center;
+}
+
+.hero .container div {
+    margin-bottom: 30px;
+}
+
+.hero .container a {
+    font-size: 30px;
+    color: #fafafa;
+}
+
+.hero .container i {
+    padding: 0 8px;
+}
+
+.hero .contato ul li a {
+    display: block;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    background: black;
+    border: 2px solid #fafafa;
+    border-radius: 5px;
+}
+
+.slider-container {
+    padding: 40px 0 150px 0;
+    max-width: 100%;
+    height: auto; /* Isso faz com que a altura seja ajustada automaticamente com base no conteúdo do slide */
+    overflow: hidden;
+    position: relative;
+    color: magenta;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0 50px;
+}
+
+@media screen and (max-width:768px) {
+    .w50 {
+        width: 100%;
+        margin-bottom: 15px;
+        min-height: 0px;
+    }
+
+    .hero .info p {
+        font-size: 40px;
+        line-height: 60px;
+       
+    }
+
+
+    .hero .info,
+    .hero .contato {
+        min-height: 300px;
+
+    }
+}
